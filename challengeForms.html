@@ -13,26 +13,28 @@
         <h1>Forms Challenge</h1>
     </header>
     <main>
-        <form action="#">
+        <form action="https://formspree.io/f/moqydjln" method="POST">
             <div>
                 <label for="fullName">Full Name</label>
-                <input id="fullName" type="text" placeholder="Full Name">
+                <input name="form_fullname" id="fullName" type="text" placeholder="Full Name" required>
             </div>
             <div>
                 <label for="email">Email</label>
-                <input id="email" type="text" placeholder="Email">
+                <input name="form_email" id="email" type="email" placeholder="Email" required>
             </div>
             <div>
                 <label for="gender">Gender</label>
-                <select name="" id="gender">
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                    <option value="">Other</option>
+                <select name="form_gender" id="gender" required>
+                    <option value="" selected disabled>-- Please Select --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
                 </select>
             </div>
             <div>
                 <label for="comment"></label>
-                <textarea name="" id="comment" cols="30" rows="10" placeholder="Leave a comment.."></textarea>
+                <textarea name="form_message" id="comment" cols="30" rows="10" placeholder="Leave a comment.."
+                    required></textarea>
             </div>
             <div>
                 <button>Sign up</button>
